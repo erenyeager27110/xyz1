@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Esra ❤️</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#ff6fa5,#ffd1e6);overflow:hidden}
+.box{max-width:760px;margin:40px auto;background:white;padding:28px;border-radius:20px}
+.heart{position:fixed;bottom:-20px;animation:up 8s linear infinite}
+@keyframes up{to{transform:translateY(-120vh)}}
+</style></head>
+<body>
+<script>
+for(let i=0;i<50;i++){let d=document.createElement('div');d.className='heart';d.textContent='❤';d.style.left=Math.random()*100+'vw';d.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(d);}
+function unlock(){
+ if(document.getElementById('p').value==='forever'){
+  document.getElementById('lock').style.display='none';
+  document.getElementById('letter').style.display='block';
+  document.getElementById('bgm').play().catch(()=>{});
+ } else alert('Wrong password');
+}
+</script>
+<div id="lock" class="box">
+<h2>🔒 For Esra ❤️</h2>
+<p>Enter the password.</p>
+<input id="p" type="password"><button onclick="unlock()">Open</button>
+</div>
+<div id="letter" class="box" style="display:none">
+<h2>Dear Esra ❤️</h2>
+<p>If you're reading this, I'm probably sitting in class while this scheduled message reaches you.</p>
+<p>I wanted to surprise you because you mean so much to me. Thinking of you makes ordinary moments feel special. I hope this little page brings a smile to your face, just like you bring one to mine.</p>
+<p>I promise to always respect you, support you, and appreciate every moment we share. Thank you for being such a wonderful part of my life.</p>
+<p><b>I love you, Esra.</b></p>
+<p style="text-align:right"><b>Forever yours,<br>Shahnawaz ❤️</b></p>
+<audio id="bgm" controls loop>
+<source src="love_melody.wav" type="audio/wav">
+</audio>
+<p><small>This melody was generated for you and is copyright-free.</small></p>
+</div>
+</body></html>
